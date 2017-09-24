@@ -72,11 +72,11 @@ At first, I tried to make excuses about why we needed that container. But as I l
 
 And you know what? It works great. It even came with a few unintended benefits, the biggest being that backtraces during errors are MUCH more understandable now. I'm currently working on a project that's using Laravel and get so frustrated by the backtrace being full of 15 calls through Laravel's sub-structure before I can find my code, if I even can.
 
-然后我读到了一片Anthony Ferrara的博客，其中探讨了编程过程中的简洁与简单的差异，并建议以优化简洁性为主。有一个段落这样说，”一个简洁的例子就是许多PHP框架都采用了依赖注入这种方式，但如果我们只是创建一系列的方法而不是使用这个复杂的框架系统呢。真正可以调试和理解的代码。“，在我写完容器以后，思考并解决了这个疑问，这个评论纠结了我几个星期。
+然后我读到了一篇Anthony Ferrara的博客，其中探讨了编程过程中的简洁与简单的差异，并建议以优化简洁性为主。有一个段落这样说，”一个简洁的例子就是许多PHP框架都采用了依赖注入这种方式，但如果我们只是创建一系列的方法而不是使用这个复杂的框架系统呢。真正可以调试和理解的代码。“，在我写完容器以后，思考并解决了这个疑问，这个评论纠结了我几个星期。
 
 起初，我尝试去找一些关于我们为什么需要容器的理由。但当我回顾CodeIgniter这过去10年的历程，我想最重要的一个部分就是框架的简洁性。简洁的代码，可以使得人们更容易理解。你不用通过6种不同的抽象去理解这代码正在做什么。所以，我把容器剥离出来，用一些简洁的类进行了替换。
 
-结果，这样整个框架工作的很好，甚至出现了一些额外的好处，一些回溯的错误更容易被人抓到和理解。我现在正在忙于一项实用Laravel框架的项目，并且被要通过15个回溯调用的Laravel子结构才能找到我自己的代码这件事情搞到崩溃。
+结果，这样整个框架工作的很好，甚至出现了一些额外的好处，一些回溯的错误更容易被人抓到和理解。我现在正在忙于一项使用Laravel框架的项目，其中我要通过15个回溯调用的Laravel子结构才能找到我自己的代码，我被这件事情搞到崩溃。
 
 ## Services
 
